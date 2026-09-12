@@ -545,20 +545,21 @@ section {
 .about-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2px;
-  background: rgba(201, 175, 130, 0.2);
+  gap: 0;
+  background: transparent;
 }
 .metric-card {
-  background: var(--ink-950);
-  color: var(--cream);
-  padding: 52px 28px;
-  text-align: center;
+  background: var(--paper);
+  color: var(--ink-900);
+  padding: 0;
+  text-align: left;
+  border: 1px solid var(--line);
 }
 .metric-value {
   display: block;
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(34px, 3vw, 52px);
-  color: var(--gold-500);
+  color: var(--gold-700);
   line-height: 1;
   margin-bottom: 12px;
 }
@@ -567,7 +568,7 @@ section {
   font-size: 12.5px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(244, 238, 226, 0.78);
+  color: var(--ink-700);
 }
 
 /* ---------- Team ---------- */
