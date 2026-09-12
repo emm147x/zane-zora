@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const DEFAULT_PORT = Number(process.env.PORT || 3000);
 const toEmail = process.env.CONTACT_TO_EMAIL || 'enquiries@zaneandzora.com';
 
 app.use(express.json({ limit: '1mb' }));
@@ -94,7 +94,21 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Zane & Zora server running on http://localhost:${PORT}`);
-  console.log(`Configure SMTP in a .env file to send enquiries by email.`);
-});
+const startServer = (port) => {
+  const server = app.listen(port, () => {
+    console.log(`Zane & Zora server running on http://localhost:${port}`);
+    console.log(`Configure SMTP in a .env file to send enquiries by email.`);
+  });
+
+  server.on('error', (error) => {
+    if (error.code === 'EADDRINUSE') {
+      console.warn(`Port ${port} is busy. Retrying on ${port + 1}...`);
+      startServer(port + 1);
+      return;
+    }
+
+    throw error;
+  });
+};
+
+startServer(DEFAULT_PORT);
