@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us — Zane &amp; Zora</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <img
+            src="images/zane-zora-icon.png"
+            alt="Zane & Zora"
+            class="brand-icon"
+          />
+          <span class="brand-text">
+            <span class="name">Zane &amp; Zora</span>
+            <span class="tag">Legal Practitioners</span>
+          </span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">The Firm</a></li>
+            <li><a href="practice-areas.html">Practice Areas</a></li>
+            <li><a href="people.html">Our People</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-gold"
+            >Schedule a Consultation</a
+          >
+          <button class="menu-toggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="padding: 76px 0 84px">
+        <div class="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1618828665347-d870c38c95c7?auto=format&amp;fit=crop&amp;w=1800&amp;q=80"
+            alt=""
+          />
+        </div>
+        <div class="container hero-inner">
+          <p class="eyebrow on-dark">Contact Us</p>
+          <h1 style="font-size: clamp(34px, 4.6vw, 52px)">
+            Let's discuss your matter
+          </h1>
+          <p class="hero-lede">
+            Tell us briefly what you need, and a member of our team will follow
+            up to arrange a consultation.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container split">
+          <div class="form-card">
+            <h3 style="margin-bottom: 6px">Send an enquiry</h3>
+            <p
+              style="
+                color: var(--ink-500);
+                font-size: 14px;
+                margin-bottom: 24px;
+              "
+            >
+              Fields marked with an asterisk are required.
+            </p>
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="c-name">Full name *</label>
+                <input id="c-name" name="name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="c-email">Email address *</label>
+                <input id="c-email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="c-phone">Phone number</label>
+                <input id="c-phone" name="phone" type="tel" />
+              </div>
+              <div class="field">
+                <label for="c-area">Practice area</label>
+                <select id="c-area" name="area">
+                  <option>Corporate &amp; Commercial</option>
+                  <option>Litigation &amp; Dispute Resolution</option>
+                  <option>Banking &amp; Finance</option>
+                  <option>Real Estate &amp; Property</option>
+                  <option>Intellectual Property</option>
+                  <option>Family &amp; Estate Planning</option>
+                  <option>Not sure — general enquiry</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="c-message">Tell us about your matter *</label>
+                <textarea
+                  id="c-message"
+                  name="message"
+                  required
+                  placeholder="A brief summary is enough to get started."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold btn-block">
+                Submit Enquiry
+              </button>
+              <div id="form-status" class="status-msg"></div>
+            </form>
+          </div>
+
+          <div>
+            <p class="eyebrow">Our Office</p>
+            <h2 style="font-size: 28px">Where to find us</h2>
+            <div class="office-grid" style="margin-top: 24px">
+              <div class="office-card">
+                <h4>Lagos</h4>
+                <div class="office-line">
+                  <strong>Address</strong
+                  ><span
+                    >4th Floor, Mulliner Towers, 39 Alfred Rewane Road, Ikoyi,
+                    Lagos</span
+                  >
+                </div>
+                <div class="office-line">
+                  <strong>Phone</strong
+                  ><span
+                    ><a href="tel:+2348062747226">+234 806 274 7226</a></span
+                  >
+                </div>
+                <div class="office-line">
+                  <strong>Email</strong
+                  ><span
+                    ><a href="mailto:lagos@zaneandzora.com"
+                      >lagos@zaneandzora.com</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <a
+              class="whatsapp-panel"
+              href="https://wa.me/2348062747226?text=Hello%20Zane%20%26%20Zora%2C%20I%20would%20like%20to%20enquire%20about%20a%20legal%20matter."
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Contact us on WhatsApp"
+            >
+              <span class="wa-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M20.5 3.5A11.7 11.7 0 0 0 3.2 18.8L2 22l3.3-1.1A11.7 11.7 0 1 0 20.5 3.5Zm-6.5 16.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-1.9.6.6-1.8-.2-.4A9.7 9.7 0 1 1 14 20.3Zm5.3-7.2c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.2-.8.9-.9 1.1-.2.2-.3.2-.6.1a8.1 8.1 0 0 1-2.4-1.5c-.9-.9-1.5-1.9-1.7-2.3-.2-.4 0-.6.1-.7.1-.1.2-.3.4-.4.1-.1.3-.3.4-.5.1-.2.1-.4 0-.5-.1-.1-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.3-.1-.2-.2-.2-.5-.3Z"
+                  />
+                </svg>
+              </span>
+              <span>
+                <strong>WhatsApp</strong>
+                <small>Message our team directly</small>
+              </span>
+            </a>
+
+            <p
+              style="margin-top: 28px; font-size: 14.5px; color: var(--ink-500)"
+            >
+              This form does not create a lawyer-client relationship. Please
+              avoid sharing confidential or privileged information until we have
+              confirmed our ability to act for you.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img src="images/zane-zora-icon.png" alt="Zane & Zora" />
+              <span class="name">Zane &amp; Zora</span>
+            </div>
+            <p style="font-size: 14.5px; max-width: 34ch">
+              Legal Practitioners advising on corporate, dispute resolution, and
+              regulatory matters across Nigeria.
+            </p>
+          </div>
+          <div>
+            <h5>Firm</h5>
+            <ul>
+              <li><a href="about.html">The Firm</a></li>
+              <li><a href="practice-areas.html">Practice Areas</a></li>
+              <li><a href="people.html">Our People</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="insights.html">Insights</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Contact</h5>
+            <ul>
+              <li>
+                <a href="mailto:enquiries@zaneandzora.com"
+                  >enquiries@zaneandzora.com</a
+                >
+              </li>
+              <li><a href="tel:+2348062747226">+234 806 274 7226</a></li>
+              <li>
+                4th Floor, Mulliner Towers, 39 Alfred Rewane Road, Ikoyi, Lagos
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year"></span> Zane &amp; Zora Legal Practitioners. All
+            rights reserved.</span
+          >
+          <span>Built by Farasola</span>
+          <span>Justice, precisely counselled.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
